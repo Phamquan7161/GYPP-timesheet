@@ -1,39 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GYPP Timesheet (ĐH TA)</title>
-    <link rel="icon" type="image/png" href="gypp-icon.png">
-    <link rel="apple-touch-icon" href="gypp-icon.png">
-    <style>
-        /* Remove default margins and padding, set full height */
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden; /* Prevents double scrollbars from appearing */
-        }
-
-        /* Force the iframe to fill the exact dimensions of the window */
-        .fullscreen-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            border: none;
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <iframe 
-        class="fullscreen-iframe" 
-        src="https://script.google.com/macros/s/AKfycbzAqCka9b3xEjcFssP9L0fmj624AROjxSuNyslkwDLHVd-wdm_DUDl7xaKVu6A8mfTFcg/exec"
-        allow="clipboard-write"
-        title="GYPP Timesheet (ĐH TA)">
-    </iframe>
-</body>
+<meta charset="utf-8">
+<title>GYPP Timesheet (ĐH TA)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="gypp-icon.png">
+<meta name="robots" content="noindex">
+<script>
+  // replace() rather than href: it leaves no history entry, so pressing Back
+  // inside the app does not bounce the browser straight back here again.
+  location.replace("https://script.google.com/macros/s/AKfycbzAqCka9b3xEjcFssP9L0fmj624AROjxSuNyslkwDLHVd-wdm_DUDl7xaKVu6A8mfTFcg/exec");
+</script>
+<!-- One second, not zero, so the script above wins the race in any browser that
+     runs it. This line only does the work when JavaScript is turned off. -->
+<meta http-equiv="refresh" content="1; url=https://script.google.com/macros/s/AKfycbzAqCka9b3xEjcFssP9L0fmj624AROjxSuNyslkwDLHVd-wdm_DUDl7xaKVu6A8mfTFcg/exec">
+<style>
+  body {
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    padding: 24px; text-align: center; color: #333; background: #fff;
+  }
+  a { color: #c1272d; }
+</style>
+<p>Opening GYPP Timesheet…<br>
+  <a href="https://script.google.com/macros/s/AKfycbzAqCka9b3xEjcFssP9L0fmj624AROjxSuNyslkwDLHVd-wdm_DUDl7xaKVu6A8mfTFcg/exec">Tap here if it does not open by itself</a>
+</p>
 </html>
